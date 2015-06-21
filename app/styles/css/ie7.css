@@ -1,0 +1,24 @@
+/** fix for poor IE7 users **/
+/* line 4, ../sass/ie7.scss */
+.contact-us .form-horizontal .controls {
+  margin-left: 0;
+  padding-left: 0;
+  display: block;
+}
+
+/* line 11, ../sass/ie7.scss */
+.span3.thumbnail-wrap {
+  width: 22.404255319148934%;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.127659574468085%;
+}
+
+/* line 20, ../sass/ie7.scss */
+.tab-once-at-time > li {
+  vertical-align: bottom;
+}
+/* line 22, ../sass/ie7.scss */
+.tab-once-at-time > li a {
+  vertical-align: bottom;
+}

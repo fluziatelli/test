@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/** fix for poor IE users **/
+sup {
+	font-size:26px;
+	top:0;
+}
+
+.main-slider{
+	.bx-prev {left: 0px;}
+	.bx-next {right: 0px;}
+}
+

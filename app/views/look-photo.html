@@ -1,0 +1,19 @@
+<div data-ng-show="lookImage">
+    <div class="row">
+        <div class="col-md-6" style="text-align:center">
+            <img data-img-preloader="lookImage" alt="{{lookImage}}" src="img/spinner.gif" class="img-responsive center-block"/>
+        </div>
+            <div class="col-md-6 info">
+        <h4>{{look.item.name}}</h4>
+        <div>{{look.item.details}}</div>
+        <div>{{look.item.composizione}}</div>
+        <ul>
+            <li data-ng-repeat="lookDetail in look.item.modelDetails">
+                {{lookDetail}}
+            </li>
+        </ul>
+        <h4 ng-click="back()">Back</h4>
+    </div>
+
+    </div>
+</div>

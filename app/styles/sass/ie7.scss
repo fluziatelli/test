@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/** fix for poor IE7 users **/
+.contact-us .form-horizontal {
+	.controls {
+		margin-left:0;
+		padding-left: 0;
+		display:block;
+	}
+}
+
+.span3.thumbnail-wrap {
+  width: 22.404255319148934%;
+  float: left;
+  margin-left: 0;
+  margin-right: 2.127659574468085%;
+}
+
+
+.tab-once-at-time {
+	> li { 
+		vertical-align: bottom;
+		a {	vertical-align: bottom;}
+	}
+}
+

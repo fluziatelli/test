@@ -1,0 +1,15 @@
+/** fix for poor IE users **/
+/* line 3, ../sass/ie.scss */
+sup {
+  font-size: 26px;
+  top: 0;
+}
+
+/* line 9, ../sass/ie.scss */
+.main-slider .bx-prev {
+  left: 0px;
+}
+/* line 10, ../sass/ie.scss */
+.main-slider .bx-next {
+  right: 0px;
+}
