@@ -23,6 +23,7 @@ yooxTestApp.controller('MainCtrl', function($scope,$location,$routeParams, $anch
 
 	$scope.open = function(item){
 		$location.path('/look/'+item.label);
+		$location.hash('tab');
 	};
 
 	$scope.gotoAnchor = function(id) {
