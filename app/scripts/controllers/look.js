@@ -1,8 +1,8 @@
 (function(){
 'use strict';
 
-yooxTestApp.controller('LookDetailCtrl',['$scope','Data','$routeParams','$location','$anchorScroll','$log',
-    function($scope,Data,$routeParams,$location,$anchorScroll,$log){
+yooxTestApp.controller('LookDetailCtrl',['$scope','Data','$routeParams','$log',
+    function($scope,Data,$routeParams,$log){
         Data.getByName($routeParams.lookId).success(function(look) {
             look.item.lookId = $routeParams.lookId;
             $scope.look = look;
