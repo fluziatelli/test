@@ -8,7 +8,6 @@ yooxTestApp.controller('NewsCtrl', function($scope,$location,$anchorScroll) {
 		var newHash = id;
 			if ($location.hash() !== newHash) {
 		        $location.hash(id);
-
 		    } else {
 		        $anchorScroll();
 		    }
