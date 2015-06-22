@@ -1,17 +1,13 @@
+(function(){
 'use strict';
 
-/**
- * Simple ImgPreloader directive
- * @author Ruben Barilani
- * github.com/hal9087
- */
 yooxTestApp.directive('imgPreloader', function() {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
-            var delay = 333; 
+            var delay = 333;
             element.addClass('loading');
-            
+
             scope.$watch(attrs.imgPreloader, function(value){
                if(typeof value == "undefined") return;
 
@@ -21,7 +17,7 @@ yooxTestApp.directive('imgPreloader', function() {
                         element
                             .attr('src',value)
                             .removeClass('loading')
-                            .addClass("loaded")
+                            .addClass("loaded");
                     } , delay);
     			};
 			    img.onerror = function() {
@@ -30,5 +26,6 @@ yooxTestApp.directive('imgPreloader', function() {
 			    img.src=value;
             });
         }
-    }
+    };
 });
+})();

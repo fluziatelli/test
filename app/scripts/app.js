@@ -1,6 +1,6 @@
-'use strict';
 
- var yooxTestApp = angular.module('yooxTestApp', [ 
+
+ var yooxTestApp = angular.module('yooxTestApp', [
     "ngRoute"])
 
 .config(function($httpProvider) {
@@ -8,7 +8,7 @@
 })
 
 .config(function($routeProvider) {
-    
+
     $routeProvider
       .when('/look/:lookId', {
       	controller  : 'LookDetailCtrl',
@@ -19,7 +19,7 @@
       	templateUrl : 'views/look-photo.html'
       })
       .otherwise({
-      	redirectTo: '/'
+      	redirectTo: '/look/one'
       });
 
 })
@@ -30,4 +30,3 @@
     };
 
 });
-
