@@ -29,6 +29,7 @@ yooxTestApp.controller('MainCtrl', function($scope,$location,$routeParams, $anch
 		var newHash = id;
 			if ($location.hash() !== newHash) {
 		        $location.hash(id);
+
 		    } else {
 		        $anchorScroll();
 		    }

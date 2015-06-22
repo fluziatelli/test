@@ -1,9 +1,8 @@
 (function(){
 'use strict';
 
-yooxTestApp.controller('LookDetailCtrl',['$scope','Data','$routeParams','$log',
-    function($scope,Data,$routeParams,$log){
-
+yooxTestApp.controller('LookDetailCtrl',['$scope','Data','$routeParams','$location','$anchorScroll','$log',
+    function($scope,Data,$routeParams,$location,$anchorScroll,$log){
         Data.getByName($routeParams.lookId).success(function(look) {
             look.item.lookId = $routeParams.lookId;
             $scope.look = look;
@@ -16,6 +15,7 @@ yooxTestApp.controller('LookDetailCtrl',['$scope','Data','$routeParams','$log',
     function($scope,Data,$routeParams,$log){
 
         Data.getByName($routeParams.lookId).success(function(look) {
+
             $scope.lookImage = look.item.images[$routeParams.photoIndex - 1];
             $scope.look = look;
             $scope.page = $routeParams.lookId;

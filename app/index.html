@@ -44,7 +44,7 @@
         <script src="scripts/vendor/json3.min.js"></script>
     <![endif]-->
 
-    <div class="container" data-ng-controller="MainCtrl">
+    <div class="container">
     <!-- Header -->
     <header>
         <h1><a href="http://www.yoox.it" title="http://yoox.it">&nbsp;</a></h1>
@@ -121,7 +121,7 @@
         </section>
 
         <!-- News -->
-        <section class="news" id="news">
+        <section class="news" id="news" data-ng-controller="NewsCtrl">
         <div class="row">
         <div class="col-md-12">
             <h3><strong>NEWS</strong></h3>
@@ -198,7 +198,7 @@
 
 
         <!-- AngularJS  -->
-        <section id="looks-highlight" class="row" >
+        <section id="looks-highlight" class="row" data-ng-controller="MainCtrl">
             <!-- Looks Highlight -->
 
                     <div class="col-md-3 nopadding">
@@ -271,6 +271,7 @@
 
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/newsController.js"></script>
         <script src="scripts/controllers/look.js"></script>
         <script src="scripts/services/data.js"></script>
         <script src="scripts/directives/imgPreLoader.js"></script>
