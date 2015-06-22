@@ -190,7 +190,7 @@
             </article>
             </div>
             <div class="row">
-                <a class="button button-grey pull-right" data-toggle="collapse" data-target="#first" ng-click="gotoAnchor('news')" id="show-less-news">
+                <a class="button button-grey pull-right" data-toggle="collapse" data-target="#first" data-ng-click="gotoAnchor('news')" id="show-less-news">
                     <span>show less news</span><span class="ico up-small"></span>
                 </a>
             </div>
@@ -225,7 +225,7 @@
                          <div class="row inner10">
                          <h3>CONTACT US</h3>
                          <p>For more information about the services we offer, and how we can work with you, please provide us with the following items of information. Fields marked by * are required</p>
-                         <form class="form-horizontal" role="form" id="signupForm">
+                         <form name="form" class="form-horizontal" novalidate ng-submit="send()">
                             <div class="form-group">
                                <label for="inpuName" class="col-lg-6 control-label">CONTACT NAME *</label>
                                <div class="col-lg-6">
