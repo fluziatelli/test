@@ -18,7 +18,7 @@ yooxTestApp.controller('MainCtrl', function($scope,$location,$routeParams, $anch
 		{
 			"label" : "four",
 			"id" : 4
-		}];
+	}];
 
 
 	$scope.open = function(item){
@@ -30,11 +30,10 @@ yooxTestApp.controller('MainCtrl', function($scope,$location,$routeParams, $anch
 		var newHash = id;
 			if ($location.hash() !== newHash) {
 		        $location.hash(id);
-
 		    } else {
 		        $anchorScroll();
 		    }
-		};
+	};
 
 	$scope.$watch(function(){
 		return $routeParams.lookId;

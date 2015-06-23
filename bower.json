@@ -4,7 +4,7 @@
   "authors": [
     "fluziatelli <fluziatelli@gmail.com>"
   ],
-  "description": "Test Yoox for Front End Developer",
+  "description": "Test Yoox - Front End Developer",
   "main": "./app",
   "license": "MIT",
   "homepage": "./app/index.html",
@@ -16,10 +16,12 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.1",
+    "angular": "~1.2.0",
     "bootstrap": "~3.3.5",
     "less": "~2.5.1",
-    "angular-route": "~1.4.1",
-    "normalize.scss": "~3.0.2+normalize.3.0.2"
+    "angular-route": "~1.2.0",
+    "normalize.scss": "~3.0.2+normalize.3.0.2",
+    "respond": "~1.4.2",
+    "html5shiv": "~3.7.2"
   }
 }

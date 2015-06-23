@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>Yoox Test</title>
-        <meta name="description" content=""/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!--[if lt IE 9]>
         <script type="text/javascript">
@@ -40,8 +40,8 @@
     <![endif]-->
 
     <!--[if lt IE 9]>
-        <script src="scripts/vendor/es5-shim.min.js"></script>
-        <script src="scripts/vendor/json3.min.js"></script>
+    <script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
 
     <div class="container">
@@ -122,11 +122,12 @@
 
         <!-- News -->
         <section class="news" id="news" data-ng-controller="NewsCtrl">
-        <div class="row">
-        <div class="col-md-12">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-12">
             <h3><strong>NEWS</strong></h3>
-        </div>
-        </div>
+            </div>
+            </div>
             <article class="row">
                 <div class="col-md-3 nopadding">
                     <h4>THE NEW YOOX.COM THERE’S NEW VOICE IN THE WORLD OF ONLINE SHOPPING</h4>
@@ -194,6 +195,7 @@
                     <span>show less news</span><span class="ico up-small"></span>
                 </a>
             </div>
+</div>
         </section>
 
 
@@ -204,7 +206,7 @@
                     <div class="col-md-3 nopadding">
                         <ul class="tab-once-at-time">
                             <li data-ng-repeat="lookid in lookIds">
-                               <a href="javascript:void(0)" data-ng-class="{'selected' : lookid.label==tabSelected}" data-ng-click="open(lookid)"> <span>{{::lookid.label | uppercase}}</span><span class="ico next-small"></span></a>
+                               <a href="javascript:void(0)" data-ng-class="{'selected' : lookid.label==tabSelected}" data-ng-click="open(lookid)"> <span>{{lookid.label | uppercase}}</span><span class="ico next-small"></span></a>
                             </li>
                       </ul>
                     </div>
@@ -225,7 +227,7 @@
                          <div class="row inner10">
                          <h3>CONTACT US</h3>
                          <p>For more information about the services we offer, and how we can work with you, please provide us with the following items of information. Fields marked by * are required</p>
-                         <form name="form" class="form-horizontal" novalidate ng-submit="send()">
+                         <form name="form" class="form-horizontal" novalidate data-ng-submit="send()">
                             <div class="form-group">
                                <label for="inpuName" class="col-lg-6 control-label">CONTACT NAME *</label>
                                <div class="col-lg-6">
@@ -264,9 +266,9 @@
   </div>
 
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="../bower_components/angular/angular.js"></script>
         <script src="../bower_components/angular-route/angular-route.js"></script>
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 
         <script src="scripts/app.js"></script>
