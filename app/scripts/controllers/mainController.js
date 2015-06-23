@@ -42,6 +42,7 @@ yooxTestApp.controller('MainCtrl', function($scope,$location,$routeParams, $anch
 			return true;
 	});
 
+
 });
 
 })();

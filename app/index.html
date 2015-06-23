@@ -97,7 +97,7 @@
                 <div class="inner10">
                     <h5>some of our works</h5>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-sm-6 col-md-6">
                             <ul class="nopadding">
                                 <li><a href="http://marni.com">marni.com</a></li>
                                 <li><a href="http://diesel.com">diesel.com</a></li>
@@ -106,7 +106,7 @@
                                 <li><a href="http://robertocavalli.com">robertocavalli.com</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6 col-md-6">
                             <ul class="nopadding">
                                 <li><a href="http://marni.com">marni.com</a></li>
                                 <li><a href="http://diesel.com">diesel.com</a></li>
@@ -220,40 +220,50 @@
 
 
             <!-- Contact us -->
-            <section class="contact-us">
+            <section class="contact-us" data-ng-controller="FormCtrl">
                 <div class="row">
                     <div class="col-md-3">&nbsp;</div>
                     <div class="col-md-9">
                          <div class="row inner10">
-                         <h3>CONTACT US</h3>
-                         <p>For more information about the services we offer, and how we can work with you, please provide us with the following items of information. Fields marked by * are required</p>
-                         <form name="form" class="form-horizontal" novalidate data-ng-submit="send()">
-                            <div class="form-group">
-                               <label for="inpuName" class="col-lg-6 control-label">CONTACT NAME *</label>
-                               <div class="col-lg-6">
-                                  <input type="text" class="form-control" id="inpuName" required />
-                               </div>
-                            </div>
-                            <div class="form-group">
-                               <label for="inputEmail" class="col-lg-6 control-label">CONTACT EMAIL ADDRESS *</label>
-                               <div class="col-lg-6">
-                                  <input type="email" class="form-control" id="inputEmail" required />
-                               </div>
-                            </div>
-                            <div class="form-group">
-                               <label for="phoneNumber" class="col-lg-6 control-label">CONTACT PHONE NUMBER</label>
-                               <div class="col-lg-6">
-                                  <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
-                               </div>
-                            </div>
-                            <div class="form-group">
-                               <div class="col-lg-6">
-                                  <button type="submit" class="button button-black">Send</button>
-                               </div>
-                            </div>
-                         </form>
+                             <h3>CONTACT US</h3>
+                             <p>For more information about the services we offer, and how we can work with you, please provide us with the following items of information. Fields marked by * are required</p>
+                            
+                             <!-- Angularjs custom client-side validation -->
+                             <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+                             <form name="userForm" class="form-horizontal" ng-submit="submitForm(userForm.$valid)" novalidate  >
+                                <div class="form-group"  ng-class="{ 'has-error' : userForm.name.$invalid && submitted}">
+                                   <label for="inpuName" class="col-lg-6 control-label">CONTACT NAME *</label>
+                                    <div class="col-lg-6">                             
+                                      <input type="text" name="name" class="form-control" ng-model="name" ng-minlength="11" required/>
+                                       <p ng-show="userForm.name.$error.required && submitted" class="help-block">Name is required.</p>
+                                       <p ng-show="userForm.name.$error.minlength" class="help-block">Username is too short.</p>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && submitted}">
+                                   <label for="inputEmail" class="col-lg-6 control-label">CONTACT EMAIL ADDRESS *</label>
+                                   <div class="col-lg-6">
+                                     <input type="email" name="email" class="form-control" ng-model="email" required>
+                                     <p ng-show="userForm.email.$error.required && submitted" class="help-block">Email is required.</p>
+                                     <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                                   </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error' : userForm.phoneNumber.$invalid && submitted}">
+                                   <label for="phoneNumber" class="col-lg-6 control-label">CONTACT PHONE NUMBER</label>
+                                   <div class="col-lg-6">
+                                      <input type="tel" class="form-control"  name="phoneNumber" ng-model="phoneNumber" ng-pattern="onlyNumbers" ng-maxlength="11">
+                                       <p ng-show="userForm.phoneNumber.$error.pattern && !userForm.phoneNumber.$pristine " class="help-block">Enter a valid phone Number</p>
+                                       <p ng-show="userForm.phoneNumber.$error.maxlength" class="help-block">phone max 10 numbers</p>
+                                   </div>
+                                </div>
+                                <div class="form-group">
+                                   <div class="col-lg-6">
+                                      <button type="submit" class="button button-black">Send</button>
+                                   </div>
+                                </div>
+                             </form>
+                         </div>
                     </div>
-                </div>
                 </div>
             </section>
 
@@ -272,9 +282,10 @@
 
 
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/mainController.js"></script>
         <script src="scripts/controllers/newsController.js"></script>
-        <script src="scripts/controllers/look.js"></script>
+        <script src="scripts/controllers/formController.js"></script>
+        <script src="scripts/controllers/lookController.js"></script>
         <script src="scripts/services/data.js"></script>
         <script src="scripts/directives/imgPreLoader.js"></script>
 
