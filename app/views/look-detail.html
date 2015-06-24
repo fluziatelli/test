@@ -1,32 +1,41 @@
 
     <div class="row">
-        <div class="col-xs-1 visible-xs">
-            &nbsp;
-         </div>
          <div class="col-lg-10">
-            <h4>{{look.item.name}}</h4>
+            <h1>{{look.item.name}}</h1>
          </div>
     </div>
     <div class="row">
+          <div class="col-md-12">
         <span id="imgLook" data-ng-repeat="lookImage in look.item.images" class="col-lg-3 col-sm-6 ">
             <a href="#/look/{{look.item.lookId}}/photo/{{$index+1}}#looks-highlight">
                 <img data-img-preloader="lookImage" alt="{{lookImage}}" src="img/spinner.gif" class="img-responsive center-block"/>
             </a>
         </span>
+          </div>
     </div>
-    <div class="row">
-        <div class="col-xs-1 visible-xs">
-            &nbsp;
-         </div>
-         <div class="col-lg-10">
-           <div>{{look.item.details}}</div>
-            <div>{{look.item.composizione}}</div>
+    <div class="row inner10">
+         <div class="col-md-10">
+            <h4>item details</h4>
+           <span>{{look.item.details}}</span>
+          </div>
+    </div>
+    <div class="row inner10">
+        <div class="col-md-10">
+            <h4>model detail</h4>
             <ul>
                <li data-ng-repeat="lookDetail in look.item.modelDetails">
                 {{lookDetail}}
               </li>
             </ul>
          </div>
-    </div>
+    
+         </div>
+ <div class="row inner10">
+        <div class="col-md-10">
+            <h4>composition</h4>
+         {{look.item.composition}}
+         </div>
+    
+         </div>
 
-</div>
+ 
