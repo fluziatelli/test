@@ -8,6 +8,7 @@
     <title>Yoox Test</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <!--[if lt IE 9]>
     <script type="text/javascript">
         document.createElement("article");
@@ -21,8 +22,10 @@
         document.createElement('data-ng-view');
     </script>
     <![endif]-->
+
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="styles/css/main.css"/>
+
     <!--[if IE]>
         <link rel="stylesheet" href="styles/css/ie.css"/>
     <![endif]-->
@@ -39,9 +42,11 @@
     <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome</a> to better experience this site.</p>
 <![endif]-->
 
+<!-- html markup and responsive layout in IE 8 -->
+
 <!--[if lt IE 9]>
-<script type='text/javascript' src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<script type='text/javascript' src="scripts/vendor/html5shiv.js"></script>
+<script type='text/javascript' src="scripts/vendor/respond.js"></script>
 <![endif]-->
 
 <div class="container">
@@ -84,239 +89,230 @@
 </section>
 
     <!-- About Us -->
-    <section class="about-us">
-        <div class="row">
-            <div class="col-md-3 nopadding-right">
-                <h3><strong>About Yoox Group</strong></h3>
-                <h4>What we do</h4>
-            </div>
-            <div class="col-md-9">
-                <p>
-                    <strong>YOOX Group</strong> is the global Internet retailing partner for leading fashion &amp; design brands. It has established itself amongst the market leaders with the multi-brand stores yoox.com, thecorner.com and shoescribe.com, as well as with numerous mono-brand online stores all "Powered by YOOX Group." The Group has offices and operations in the United States, Europe, Japan, China and Hong Kong and delivers to more than 100 countries worldwide.
-                </p>
-            </div>
+<section class="about-us">
+    <div class="row">
+        <div class="col-md-3 nopadding-right">
+            <h3><strong>About Yoox Group</strong></h3>
+            <h4>What we do</h4>
         </div>
-        <div class="row">
-            <div class="col-md-offset-3 list">
-             <h5>some of our works</h5>
-             <div class="row">
-                    
-                        <div class="col-sm-6 col-md-6 nopadding">
-                            <ul>
-                                <li><a href="http://marni.com">MARNI.COM</a></li>
-                                <li><a href="http://diesel.com">DIESEL.COM</a></li>
-                                <li><a href="http://valentino.com">VALENTINO.COM</a></li>
-                                <li><a href="http://moschino.com">MOSCHINO.COM</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 col-md-6 nopadding">
-                            <ul>
-                                <li><a href="http://marni.com">ROBERTOCAVALLI.COM</a></li>
-                                <li><a href="http://diesel.com"> DOLCEGABBANA.COM</a></li>
-                                <li><a href="http://valentino.com">ZEGNA.COM</a></li>
-                                <li><a href="http://moschino.com">TRUSSARDI.COM</a></li>
-                            </ul>
-                        </div>
+        <div class="col-md-9">
+            <p>
+                <strong>YOOX Group</strong> is the global Internet retailing partner for leading fashion &amp; design brands. It has established itself amongst the market leaders with the multi-brand stores yoox.com, thecorner.com and shoescribe.com, as well as with numerous mono-brand online stores all "Powered by YOOX Group." The Group has offices and operations in the United States, Europe, Japan, China and Hong Kong and delivers to more than 100 countries worldwide.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-offset-3 list">
+            <h5>some of our works</h5>
+            <div class="row">
+                
+                    <div class="col-sm-6 col-md-6 nopadding">
+                        <ul>
+                            <li><a href="http://marni.com">MARNI.COM</a></li>
+                            <li><a href="http://diesel.com">DIESEL.COM</a></li>
+                            <li><a href="http://valentino.com">VALENTINO.COM</a></li>
+                            <li><a href="http://moschino.com">MOSCHINO.COM</a></li>
+                        </ul>
                     </div>
+                    <div class="col-sm-6 col-md-6 nopadding">
+                        <ul>
+                            <li><a href="http://marni.com">ROBERTOCAVALLI.COM</a></li>
+                            <li><a href="http://diesel.com"> DOLCEGABBANA.COM</a></li>
+                            <li><a href="http://valentino.com">ZEGNA.COM</a></li>
+                            <li><a href="http://moschino.com">TRUSSARDI.COM</a></li>
+                        </ul>
+                    </div>
+            </div>
         </div>
-           </div>     
+    </div>     
             
-            <div class="row inner10">
-                <div class="col-md-offset-3 list">
-                
-                 <small> <a href="#">Click here to download a PDF of our recent works</a></small>
-               
-                </div>
+    <div class="row inner10">
+        <div class="col-md-offset-3 list">
+         <small> <a href="#">Click here to download a PDF of our recent works</a></small>
+        </div>
 
-             </div>
+    </div>   
+</section>
+
+<!-- News -->
+<section class="news" id="news" data-ng-controller="NewsCtrl">
     
-        
-    </section>
-
-    <!-- News -->
-    <section class="news" id="news" data-ng-controller="NewsCtrl">
-    
-        
-        <article>
-           <div class="row container">
-                    <div class="col-md-12">
-                        <h3><strong>NEWS</strong></h3>
-                    </div>
-            </div>
-            <div  class="row">        
-         
-            <div class="col-md-3 ">
-                
-                <h4>THE NEW YOOX.COM THERE’S NEW VOICE IN THE WORLD OF ONLINE SHOPPING</h4>
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                           3 September 2012 &ndash; Online shoppers can now purchase their favorite outfit simply by speaking to their computer. After launching fashion e-commerce back in early 2000, yoox.com has been completely reinvented and redesigned. As part of its new look, it introduces <strong>Speak &amp; Shop&trade;</strong>, a revolutionary feature for online fashion where text search meets voice recognition from YOOX Group Technology and R&amp;D divisions - innovation Made in Italy.Millions of visitors from around the globe are welcomed to the NEW yoox.com by its digital cover featuring the famous Chinese top model <strong>Xiao Wen Ju</strong> wearing a video-dress conceived by mixing fashion with technology.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                         <p>
-                            Style and design lovers can search their favorite outfit, shoes, accessories or design objects by simply clicking or writing their favorite color of the season, or by using the feature <strong>Speak &amp; Shop&trade;</strong> allowing them to state their preferred color in <strong>nine languages</strong> (British English, Italian, French, Russian, Spanish, German, US English, Japanese and Korean): the digital cover page will return an edited selection of fashion and design pieces in the desired color. Xiao Wen Ju's kaleidoscopic look too is transformed in the same color, creating a mono-chrome page of products and dreams. Retail therapy meets chromo-therapy &ndash; all of course using Google Chrome&trade;.
-                        </p>
-                    </div>
+    <article>
+       <div class="row container">
+                <div class="col-md-12">
+                    <h3><strong>NEWS</strong></h3>
                 </div>
-            </div>
-         </div>   
-        </article>
-        <div class="collapse in" id = "first">
-        <article>
+        </div>
+        <div  class="row">        
+        <div class="col-md-3 ">  
+            <h4>THE NEW YOOX.COM THERE’S NEW VOICE IN THE WORLD OF ONLINE SHOPPING</h4>
+        </div>
+        <div class="col-md-9">
             <div class="row">
-
-            <div class="col-md-3 ">
-                <h4>DISCOVERED IN AFRICA BY VOGUE ITALIA EXCLUSIVELY ON YOOX.COM</h4>
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            yoox.com, the leading virtual store for multi-brand fashion and design in the world, in collaboration with Vogue Italia presents a new and innovative project dedicated to the forefront of <strong>African fashion</strong>. From May 2012 Discovered in Africa by Vogue Italy Exclusively on yoox.com offers fashion fans around the world the chance to add an original touch of exotic style and elegance to their wardrobes, just in time for summer.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            Thanks to her role as <strong>Goodwill Ambassador</strong> for the Fashion4Development project, Director of Vogue Italia <strong>Franca Sozzani</strong> is directly involved in the UN&rsquo;s fashion based initiatives combatting poverty and gender inequality in Africa. Together with sustainable fashion expert Marina Spadafora, Franca Sozzani has selected 10 brands to represent the vanguard of African creativity. Thanks to the presence of yoox.com in over 100 countries, these products will have the chance to be appreciated and purchased by fashionistas from every corner of the planet.
-                         </p>
-                    </div>
+                <div class="col-md-6">
+                    <p>
+                       3 September 2012 &ndash; Online shoppers can now purchase their favorite outfit simply by speaking to their computer. After launching fashion e-commerce back in early 2000, yoox.com has been completely reinvented and redesigned. As part of its new look, it introduces <strong>Speak &amp; Shop&trade;</strong>, a revolutionary feature for online fashion where text search meets voice recognition from YOOX Group Technology and R&amp;D divisions - innovation Made in Italy.Millions of visitors from around the globe are welcomed to the NEW yoox.com by its digital cover featuring the famous Chinese top model <strong>Xiao Wen Ju</strong> wearing a video-dress conceived by mixing fashion with technology.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                     <p>
+                        Style and design lovers can search their favorite outfit, shoes, accessories or design objects by simply clicking or writing their favorite color of the season, or by using the feature <strong>Speak &amp; Shop&trade;</strong> allowing them to state their preferred color in <strong>nine languages</strong> (British English, Italian, French, Russian, Spanish, German, US English, Japanese and Korean): the digital cover page will return an edited selection of fashion and design pieces in the desired color. Xiao Wen Ju's kaleidoscopic look too is transformed in the same color, creating a mono-chrome page of products and dreams. Retail therapy meets chromo-therapy &ndash; all of course using Google Chrome&trade;.
+                    </p>
                 </div>
             </div>
         </div>
-        </article>
-        <article class="last">
-            <div class="row">
-            <div class="col-md-3 ">
-                <h4>LE CYCLOPE ARDENT - THE SOFTNESS OF CERAMICS AND THE RICHNESS OF PRECIOUS METALS</h4>
-            </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            Cutting-edge French design brand Moustache joins forces with the leading virtual store for multi-brand fashion and design in the world, yoox.com, to create an exciting new product - <strong>Le Cyclope Ardent</strong>, available exclusively on yoox.com from the end of March 2012.The Cyclope mirror, designed by young French designer <strong>Ionna Vautrin</strong>, gets its name from the convex mirrors, (which in French are called &lsquo;witches' eyes) - Vautrin takes this magical object and perches it atop a soft cone crafted from clay, creating a table-top mirror with a distinctly sculptural feel, evoking the mysterious monolithic statues of far-off primitive cultures or the minimal eloquence of sculptors like Brancusi and Moore.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            Originally available in a matt ceramic finish, for yoox.com, Vautrin has created 3 new and unique new versions &ndash; Le Cyclope Ardent. Le Cyclope Ardent is coated in a lustrous hi-gloss metallic finish, 3 different metals chosen for their evocative richness, luster and sophistication: opulent gold, elegant platinum and warm, alluring copper. Like a sculpture for the home, Le Cyclope Ardent sits atop any table or desk and gazes out at the world around it, offering users a glimpse into a strange and intriguing vision of the world.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </article>
-        </div>
+     </div>   
+    </article>
+    <div class="collapse in" id = "first">
+    <article>
         <div class="row">
-            <div class="col-md-12 ">
-            <a class="button button-grey pull-right" data-toggle="collapse" data-target="#first" data-ng-click="gotoAnchor('news')" id="show-less-news">
-                <span data-ng-show="showme">show less news</span><span  data-ng-show="showme" class="ico up-small"></span>
-                <span data-ng-show="!showme">show more news</span><span  data-ng-show="!showme" class="ico down-small"></span>
-            </a>
+
+        <div class="col-md-3 ">
+            <h4>DISCOVERED IN AFRICA BY VOGUE ITALIA EXCLUSIVELY ON YOOX.COM</h4>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        yoox.com, the leading virtual store for multi-brand fashion and design in the world, in collaboration with Vogue Italia presents a new and innovative project dedicated to the forefront of <strong>African fashion</strong>. From May 2012 Discovered in Africa by Vogue Italy Exclusively on yoox.com offers fashion fans around the world the chance to add an original touch of exotic style and elegance to their wardrobes, just in time for summer.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Thanks to her role as <strong>Goodwill Ambassador</strong> for the Fashion4Development project, Director of Vogue Italia <strong>Franca Sozzani</strong> is directly involved in the UN&rsquo;s fashion based initiatives combatting poverty and gender inequality in Africa. Together with sustainable fashion expert Marina Spadafora, Franca Sozzani has selected 10 brands to represent the vanguard of African creativity. Thanks to the presence of yoox.com in over 100 countries, these products will have the chance to be appreciated and purchased by fashionistas from every corner of the planet.
+                     </p>
+                </div>
             </div>
         </div>
-
-    </section>
-
-
-    <!-- AngularJS  -->
-    <section id="looks-highlight" data-ng-controller="MainCtrl">
-        <!-- Looks Highlight -->
+    </div>
+    </article>
+    <article class="last">
+        <div class="row">
+        <div class="col-md-3 ">
+            <h4>LE CYCLOPE ARDENT - THE SOFTNESS OF CERAMICS AND THE RICHNESS OF PRECIOUS METALS</h4>
+        </div>
+        <div class="col-md-9">
             <div class="row">
-                <div class="col-md-3 ">
-                    <ul class="tab-once-at-time">
-                        <li data-ng-repeat="lookid in lookIds">
-                           <a href="javascript:void(0)" data-ng-class="{'selected' : lookid.label==tabSelected}" data-ng-click="open(lookid)"> <span>{{lookid.label | uppercase}}</span><span class="ico next-small"></span></a>
-                        </li>
-                  </ul>
+                <div class="col-md-6">
+                    <p>
+                        Cutting-edge French design brand Moustache joins forces with the leading virtual store for multi-brand fashion and design in the world, yoox.com, to create an exciting new product - <strong>Le Cyclope Ardent</strong>, available exclusively on yoox.com from the end of March 2012.The Cyclope mirror, designed by young French designer <strong>Ionna Vautrin</strong>, gets its name from the convex mirrors, (which in French are called &lsquo;witches' eyes) - Vautrin takes this magical object and perches it atop a soft cone crafted from clay, creating a table-top mirror with a distinctly sculptural feel, evoking the mysterious monolithic statues of far-off primitive cultures or the minimal eloquence of sculptors like Brancusi and Moore.
+                    </p>
                 </div>
-                <div class="col-md-9">
-                    <div class="inner10 inner-grey-shadow">
-                        <div data-ng-view></div>
+                <div class="col-md-6">
+                    <p>
+                        Originally available in a matt ceramic finish, for yoox.com, Vautrin has created 3 new and unique new versions &ndash; Le Cyclope Ardent. Le Cyclope Ardent is coated in a lustrous hi-gloss metallic finish, 3 different metals chosen for their evocative richness, luster and sophistication: opulent gold, elegant platinum and warm, alluring copper. Like a sculpture for the home, Le Cyclope Ardent sits atop any table or desk and gazes out at the world around it, offering users a glimpse into a strange and intriguing vision of the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </article>
+    </div>
+    <div class="row">
+        <div class="col-md-12 ">
+        <a class="button button-grey pull-right" data-toggle="collapse" data-target="#first" data-ng-click="gotoAnchor('news')" id="show-less-news">
+            <span data-ng-show="showme">show less news</span><span  data-ng-show="showme" class="ico up-small"></span>
+            <span data-ng-show="!showme">show more news</span><span  data-ng-show="!showme" class="ico down-small"></span>
+        </a>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- AngularJS  -->
+<section id="looks-highlight" data-ng-controller="MainCtrl">
+    <!-- Looks Highlight -->
+    <div class="row">
+        <div class="col-md-3 ">
+            <ul class="tab-once-at-time">
+                <li data-ng-repeat="lookid in lookIds">
+                   <a href="javascript:void(0)" data-ng-class="{'selected' : lookid.label==tabSelected}" data-ng-click="open(lookid)"> <span>{{lookid.label | uppercase}}</span><span class="ico next-small"></span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <div class="inner10 inner-grey-shadow">
+                <div data-ng-view></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact us -->
+<section class="contact-us" data-ng-controller="FormCtrl">
+    <div class="row">
+        <div class="col-md-offset-3">
+            <h3>CONTACT US</h3>
+             For more information about the services we offer, and how we can work with you, please provide us with the following items of information. Fields marked by * are required
+            
+             <!-- Angularjs custom client-side validation -->
+             <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+            <form name="userForm" class="general form-horizontal" data-ng-submit="submitForm(userForm.$valid)" novalidate  >
+                <div class="form-group"  data-ng-class="{ 'has-error' : userForm.name.$invalid && submitted}">
+                   <label  class="col-md-4">CONTACT NAME *</label>
+                    <div class="col-lg-6 nopadding">                             
+                      <input type="text" name="name" class="form-control" data-ng-model="name" data-ng-minlength="11" required/>
+                       <p data-ng-show="userForm.name.$error.required && submitted" class="help-block">Name is required.</p>
+                       <p data-ng-show="userForm.name.$error.minlength" class="help-block">Username is too short.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Contact us -->
-        <section class="contact-us" data-ng-controller="FormCtrl">
-            <div class="row">
-                <div class="col-md-offset-3">
-                         <h3>CONTACT US</h3>
-                         For more information about the services we offer, and how we can work with you, please provide us with the following items of information. Fields marked by * are required
-                        
-                         <!-- Angularjs custom client-side validation -->
-                         <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
-
-                         <form name="userForm" class="general form-horizontal" data-ng-submit="submitForm(userForm.$valid)" novalidate  >
-                            <div class="form-group"  data-ng-class="{ 'has-error' : userForm.name.$invalid && submitted}">
-                               <label  class="col-md-4">CONTACT NAME *</label>
-                                <div class="col-lg-6 nopadding">                             
-                                  <input type="text" name="name" class="form-control" data-ng-model="name" data-ng-minlength="11" required/>
-                                   <p data-ng-show="userForm.name.$error.required && submitted" class="help-block">Name is required.</p>
-                                   <p data-ng-show="userForm.name.$error.minlength" class="help-block">Username is too short.</p>
-                                </div>
-                            </div>
-                            <div class="form-group" data-ng-class="{ 'has-error' : userForm.email.$invalid && submitted}">
-                               <label class="col-md-4">CONTACT EMAIL ADDRESS *</label>
-                               <div class="col-lg-6 nopadding">
-                                 <input type="email" name="email" class="form-control" data-ng-model="email" required>
-                                 <p data-ng-show="userForm.email.$error.required && submitted" class="help-block">Email is required.</p>
-                                 <p data-ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
-                               </div>
-                            </div>
-                            <div class="form-group" data-ng-class="{ 'has-error' : userForm.phoneNumber.$invalid && submitted}">
-                               <label class="col-md-4">CONTACT PHONE NUMBER</label>
-                               <div class="col-lg-6 nopadding">
-                                  <input type="tel" class="form-control"  name="phoneNumber" data-ng-model="phoneNumber" data-ng-pattern="onlyNumbers" data-ng-maxlength="11">
-                                   <p data-ng-show="userForm.phoneNumber.$error.pattern && !userForm.phoneNumber.$pristine " class="help-block">Enter a valid phone Number</p>
-                                   <p data-ng-show="userForm.phoneNumber.$error.maxlength" class="help-block">phone max 10 numbers</p>
-                               </div>
-                            </div>
-                            <div class="form-group">
-                               <div class="col-md-offset-4">
-                                  <button type="submit" class="button button-black">Send</button>
-                               </div>
-                            </div>
-                         </form>
+                <div class="form-group" data-ng-class="{ 'has-error' : userForm.email.$invalid && submitted}">
+                   <label class="col-md-4">CONTACT EMAIL ADDRESS *</label>
+                   <div class="col-lg-6 nopadding">
+                     <input type="email" name="email" class="form-control" data-ng-model="email" required>
+                     <p data-ng-show="userForm.email.$error.required && submitted" class="help-block">Email is required.</p>
+                     <p data-ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                   </div>
                 </div>
-            </div>
-        </section>
+                <div class="form-group" data-ng-class="{ 'has-error' : userForm.phoneNumber.$invalid && submitted}">
+                   <label class="col-md-4">CONTACT PHONE NUMBER</label>
+                   <div class="col-lg-6 nopadding">
+                      <input type="tel" class="form-control"  name="phoneNumber" data-ng-model="phoneNumber" data-ng-pattern="onlyNumbers" data-ng-maxlength="11">
+                       <p data-ng-show="userForm.phoneNumber.$error.pattern && !userForm.phoneNumber.$pristine " class="help-block">Enter a valid phone Number</p>
+                       <p data-ng-show="userForm.phoneNumber.$error.maxlength" class="help-block">phone max 10 numbers</p>
+                   </div>
+                </div>
+                <div class="form-group">
+                   <div class="col-md-offset-4">
+                      <button type="submit" class="button button-black">Send</button>
+                   </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
-
-
-    <!-- Footer -->
-    <footer><small></small></footer>
+<!-- Footer -->
+<footer><small></small></footer>
 
    <!-- END :  Container -->
 </div>
 
-    <!-- TO DO task grunt for vendor js  -->
-    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="../bower_components/angular/angular.js"></script>
-    <script src="../bower_components/angular-route/angular-route.js"></script>
+<!-- TO DO task grunt for vendor js  -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-route/angular-route.js"></script>
 
-    <!-- TO DO task grunt for angular js  -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/mainController.js"></script>
-    <script src="scripts/controllers/newsController.js"></script>
-    <script src="scripts/controllers/formController.js"></script>
-    <script src="scripts/controllers/lookController.js"></script>
-    <script src="scripts/services/data.js"></script>
-    <script src="scripts/directives/imgPreLoader.js"></script>
+<!-- TO DO task grunt for angular js  -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/mainController.js"></script>
+<script src="scripts/controllers/newsController.js"></script>
+<script src="scripts/controllers/formController.js"></script>
+<script src="scripts/controllers/lookController.js"></script>
+<script src="scripts/services/data.js"></script>
+<script src="scripts/directives/imgPreLoader.js"></script>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <!--<script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>-->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>-->
 </body>
 </html>
