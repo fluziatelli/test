@@ -23,140 +23,153 @@
   font-style: normal;
 }
 /** base **/
-/* line 68, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 body, label, a, a:hover {
   font-family: 'knockout29';
   font-size: 18px;
   color: #666;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 a, input, button {
   outline: 0 !important;
 }
-/* line 74, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 a:hover, input:hover, button:hover {
   outline: 0 !important;
 }
 
-/* line 76, ../sass/main.scss */
-h1, h2, h3, h4, h5, h6, strong {
+/* line 80, ../sass/main.scss */
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   text-transform: uppercase;
   color: #333;
 }
 
-/* line 82, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 strong {
   font-family: 'knockout49';
+  font-weight: normal;
+  color: #333;
 }
 
-/* line 86, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 h1 {
   line-height: normal;
 }
 
-/* line 88, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 h3, h4 {
   margin-top: 0;
 }
 
-/* line 91, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 h3 {
   line-height: 30px;
   font-size: 30px;
 }
 
-/* line 95, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 h4 {
   font-size: 24px;
   line-height: 28px;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 h5 {
   font-size: 18px;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 p {
   padding: 0 10px;
 }
 
-/* line 104, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 ul {
-  margin: 0 0 0px 18px;
+  margin: 0 0 0 0;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 115, ../sass/main.scss */
 section {
   margin-bottom: 28px;
 }
 
-/* line 112, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 img.loading {
   width: auto;
   display: inline;
   max-width: 100%;
 }
 
-/* line 120, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .inner-grey-shadow {
   -webkit-box-shadow: inset 0px 0px 4px 2px rgba(204, 204, 204, 0.63);
   -moz-box-shadow: inset 0px 0px 4px 2px rgba(204, 204, 204, 0.63);
   box-shadow: inset 0px 0px 4px 2px rgba(204, 204, 204, 0.63);
 }
 
-/* line 121, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .ico {
   background: url(../../img/sprite.png) no-repeat 0 0;
 }
 
-/* line 122, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
+.carousel-control .ico.prev-big {
+  background-position: -35px 0px;
+  width: 34px;
+  height: 59px;
+  margin-left: -100px;
+  margin-top: 170px;
+}
+/* line 140, ../sass/main.scss */
+.carousel-control .ico.next-big {
+  background-position: -68px 0;
+  width: 34px;
+  height: 59px;
+  margin-right: -100px;
+  margin-top: 170px;
+}
+
+/* line 148, ../sass/main.scss */
 .ico.next-small {
   background-position: -10px 0px;
   width: 10px;
   height: 19px;
 }
 
-/* line 126, ../sass/main.scss */
-.ico.prev-big {
-  background-position: -35px 0px;
-  width: 34px;
-  height: 59px;
-}
-
-/* line 131, ../sass/main.scss */
-.ico.next-big {
-  background-position: -68px 0;
-  width: 34px;
-  height: 59px;
-}
-
-/* line 136, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .ico.up-small {
   background-position: -20px 0;
   width: 14px;
   height: 8px;
 }
 
-/* line 141, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
+.ico.down-small {
+  background-position: -19px -8px;
+  width: 14px;
+  height: 8px;
+  top: 40% !important;
+}
+
+/* line 164, ../sass/main.scss */
 .tab-once-at-time {
   margin: 0 0 0 0;
   -webkit-padding-start: 0px;
 }
 @-moz-document url-prefix() {
-  /* line 141, ../sass/main.scss */
+  /* line 164, ../sass/main.scss */
   .tab-once-at-time {
     margin: 0 0 0 -40px;
   }
 }
-/* line 148, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .tab-once-at-time > li {
   cursor: pointer;
   display: block;
 }
-/* line 152, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .tab-once-at-time > li a {
   padding: 16px 0;
   border-top: 1px solid #cfcfcf;
@@ -166,63 +179,52 @@ img.loading {
   color: #333;
   background: #f2f2f2;
 }
-/* line 158, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .tab-once-at-time > li a:hover, .tab-once-at-time > li a.selected {
   background: #fff;
 }
-/* line 161, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .tab-once-at-time > li a > span {
   padding-left: 8px;
   display: block;
 }
-/* line 165, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .tab-once-at-time > li a .ico {
   padding: 0;
   position: absolute;
   top: 50%;
 }
-/* line 172, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .tab-once-at-time > li.last a {
   border-bottom: 1px solid #cfcfcf;
 }
 
 /** layout **/
-/* line 177, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 .container {
   max-width: 960px;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
 .nopadding-right {
   padding-right: 0 !important;
   margin-right: 0 !important;
 }
 
-/* line 186, ../sass/main.scss */
+/* line 212, ../sass/main.scss */
 .inner10 {
   padding: 10px;
 }
 
-@media (max-width: 767px) {
-  /* line 189, ../sass/main.scss */
-  body {
-    padding: 0;
-  }
-
-  /* line 190, ../sass/main.scss */
-  .container {
-    padding: 0 20px;
-  }
-}
 /** forms & inputs **/
-/* line 194, ../sass/main.scss */
-input[type="text"], input[type="email"], input[type="password"], textarea {
+/* line 217, ../sass/main.scss */
+input[type="text"], input[type="email"], input[type="tel"], textarea {
   background: #fff;
   border-color: rgba(204, 204, 204, 0.8);
   -webkit-box-shadow: inset 0px 0px 4px 2px rgba(204, 204, 204, 0.63);
@@ -233,12 +235,12 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   -ms-border-radius: 0;
   border-radius: 0;
 }
-/* line 199, ../sass/main.scss */
-input[type="text"].error, input[type="email"].error, input[type="password"].error, textarea.error {
+/* line 222, ../sass/main.scss */
+input[type="text"].error, input[type="email"].error, input[type="tel"].error, textarea.error {
   border-color: #b94a48;
 }
 
-/* line 202, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .button {
   position: relative;
   -moz-border-radius: 0;
@@ -255,16 +257,16 @@ input[type="text"].error, input[type="email"].error, input[type="password"].erro
   text-decoration: none;
   letter-spacing: 2px;
 }
-/* line 212, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 .button:hover {
   text-decoration: none;
 }
-/* line 214, ../sass/main.scss */
+/* line 237, ../sass/main.scss */
 .button span {
   display: block;
   padding: 0px 22px 0 2px;
 }
-/* line 215, ../sass/main.scss */
+/* line 238, ../sass/main.scss */
 .button span.ico {
   display: block;
   position: absolute;
@@ -272,12 +274,12 @@ input[type="text"].error, input[type="email"].error, input[type="password"].erro
   padding: 0;
   right: 6px;
 }
-/* line 217, ../sass/main.scss */
+/* line 240, ../sass/main.scss */
 .button .up-small {
   margin-top: -4px;
 }
 
-/* line 220, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 .button.button-black {
   font-size: 22px;
   width: 124px;
@@ -298,7 +300,7 @@ input[type="text"].error, input[type="email"].error, input[type="password"].erro
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#656565', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
 }
-/* line 224, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 .button.button-black:hover {
   background: #656565;
   /* Old browsers */
@@ -318,43 +320,63 @@ input[type="text"].error, input[type="email"].error, input[type="password"].erro
   /* IE6-9 */
 }
 
-/* line 226, ../sass/main.scss */
+/* line 249, ../sass/main.scss */
 .button.button-grey {
   background: #666;
 }
-/* line 229, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 .button.button-grey:hover {
   background: #333;
   color: #fff;
 }
 
-/* line 233, ../sass/main.scss */
-.error {
-  color: #b94a48;
-  display: block;
-  padding: 2px 0px;
+/** contact section **/
+/* line 257, ../sass/main.scss */
+.contact-us p {
+  padding: 10px 0;
+}
+/* line 261, ../sass/main.scss */
+.contact-us .row {
+  padding: 20px;
+}
+/* line 265, ../sass/main.scss */
+.contact-us .general {
+  margin-top: 20px;
 }
 
+@media (max-width: 767px) {
+  /* line 272, ../sass/main.scss */
+  .contact-us .inner10 {
+    padding: 10px 0;
+  }
+}
 /** contact form **/
-/* line 242, ../sass/main.scss */
+/* line 281, ../sass/main.scss */
+label {
+  font-weight: normal;
+}
+
+/* line 287, ../sass/main.scss */
 .contact-us .form-horizontal .control-label {
   text-align: left;
   width: 319px;
   text-transform: uppercase;
+  color: #d5d5d5;
+  font-weight: normal;
 }
-/* line 248, ../sass/main.scss */
+/* line 295, ../sass/main.scss */
 .contact-us .form-horizontal .controls {
   margin-left: 319px;
 }
 
 @media (max-width: 480px) {
-  /* line 256, ../sass/main.scss */
+  /* line 303, ../sass/main.scss */
   .contact-us .form-horizontal .controls {
     margin-left: 0;
   }
 }
 /** custom **/
-/* line 262, ../sass/main.scss */
+/* line 310, ../sass/main.scss */
 header h1 a {
   color: #58585a;
   margin: 24px 0 18px 0;
@@ -366,122 +388,91 @@ header h1 a {
   text-indent: -9999px;
 }
 
-/* line 272, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 footer {
   border-top: 1px solid #e4e4e4;
   padding: 24px;
 }
 
 /** about us section **/
-/* line 279, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 .about-us h3, .about-us h4 {
   padding: 0 10px;
   padding-top: 0;
 }
-/* line 281, ../sass/main.scss */
+/* line 330, ../sass/main.scss */
+.about-us .list {
+  padding-left: 25px;
+}
+/* line 334, ../sass/main.scss */
 .about-us ul li {
   padding: 2px 0;
 }
-/* line 283, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 .about-us ul li a {
   text-transform: uppercase;
 }
 
 /** news section layout **/
-/* line 288, ../sass/main.scss */
+/* line 341, ../sass/main.scss */
 .news > h3 {
   background: #f2f2f2;
   padding: 14px 10px;
   margin-bottom: 0;
 }
-/* line 294, ../sass/main.scss */
+/* line 347, ../sass/main.scss */
 .news article {
   background: #f2f2f2;
   border-top: 1px solid #cfcfcf;
   padding: 12px 0;
 }
-/* line 299, ../sass/main.scss */
+/* line 352, ../sass/main.scss */
 .news article.first {
   border: 0;
   padding: 0;
   padding-bottom: 12px;
 }
-/* line 300, ../sass/main.scss */
+/* line 353, ../sass/main.scss */
 .news article.last {
   border-bottom: 1px solid #cfcfcf;
 }
-/* line 301, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .news article h4 {
   padding: 0 10px;
 }
-/* line 306, ../sass/main.scss */
+/* line 360, ../sass/main.scss */
 .news #show-less-news {
   margin-top: 10px;
 }
 
 /** look section **/
-/* line 314, ../sass/main.scss */
-#looks-highlight .no-look.selected {
-  display: none;
-}
-/* line 315, ../sass/main.scss */
+/* line 368, ../sass/main.scss */
 #looks-highlight h4 {
   margin-top: 10px;
 }
-/* line 317, ../sass/main.scss */
+/* line 371, ../sass/main.scss */
 #looks-highlight .tab-once-at-time li a {
   position: relative;
   font-size: 24px;
 }
-/* line 320, ../sass/main.scss */
+/* line 374, ../sass/main.scss */
 #looks-highlight .tab-once-at-time li a span {
   padding-right: 24px;
 }
-/* line 321, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 #looks-highlight .tab-once-at-time li a span.next-small {
   padding: 0;
   margin-top: -10px;
   right: 6px;
 }
 
-/* line 329, ../sass/main.scss */
-.span3.thumbnail-wrap {
-  text-align: center;
-  width: 23.404255319148934%;
-  float: left;
-  margin-left: 2.127659574468085%;
-}
-
 @media (max-width: 767px) {
-  /* line 336, ../sass/main.scss */
+  /* line 387, ../sass/main.scss */
   #looks-highlight .inner10 {
     padding: 10px 0;
   }
-  /* line 339, ../sass/main.scss */
+  /* line 390, ../sass/main.scss */
   #looks-highlight .info, #looks-highlight .no-look {
     padding: 0 10px;
-  }
-}
-@media (max-width: 470px) {
-  /* line 346, ../sass/main.scss */
-  .span3.thumbnail-wrap {
-    width: 50%;
-    margin-left: 0;
-  }
-  /* line 348, ../sass/main.scss */
-  .span3.thumbnail-wrap img.loaded {
-    width: 100%;
-  }
-}
-/** contact section **/
-/* line 355, ../sass/main.scss */
-.contact-us p {
-  padding: 10px 0;
-}
-
-@media (max-width: 767px) {
-  /* line 359, ../sass/main.scss */
-  .contact-us .inner10 {
-    padding: 10px 0;
   }
 }
